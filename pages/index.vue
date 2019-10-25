@@ -1,73 +1,32 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        sean-winner-app
-      </h1>
-      <h2 class="subtitle">
-        Portfolio app
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div
+    class="text-xl sm:text-2xl md:text-3xl lg:text-4xl md:font-light text-gray-700"
+  >
+    <p class="mt-10 top-body-p">
+      Hey! I’m Sean Winner, a software developer from Maryland. Many people know
+      me as the guy who writes code and lives in a van 🚐 💻
+    </p>
+    <p class="mt-6 sm:mt-8 md:mt-10">
+      Yo! some other stuff
+    </p>
+    <p class="mt-6 sm:mt-8 md:mt-10">
+      This is a website where I talk about stuff
+    </p>
+    <p
+      class="border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg"
+    >
+      This website was built with
+      <a
+        href="https://tailwindcss.com/"
+        class="border-b border-gray-900 pb-px text-gray-900"
+        >TailwindCSS</a
+      >
+      and
+      <a
+        href="https://nuxtjs.org/"
+        class="border-b border-gray-900 pb-px text-gray-900"
+        >Nuxt.js</a
+      >.
+    </p>
   </div>
 </template>
-
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
