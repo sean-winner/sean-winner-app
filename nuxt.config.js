@@ -47,7 +47,8 @@ export default {
     '@nuxtjs/markdownit'
   ],
   markdownit: {
-    injected: true
+    injected: true,
+    html: true
   },
   /*
    ** Axios module configuration
