@@ -15,12 +15,12 @@
         <p class="mt-6">Here is some stuff I'm interested in:</p>
       </div>
       <div class="mt-6 lg:mt-10 border-b border-gray-400">
-        <div class="border-t border-gray-400 py-6 sm:py-8 lg:py-10">
-          <div
-            v-for="blogPost in blogPosts"
-            :key="blogPost.slug"
-            class="lg:flex items-center justify-between"
-          >
+        <div
+          v-for="blogPost in blogPosts"
+          :key="blogPost.slug"
+          class="border-t border-gray-400 py-6 sm:py-8 lg:py-10"
+        >
+          <div class="lg:flex items-center justify-between">
             <list-item
               :title="blogPost.title"
               :description="blogPost.description"
