@@ -24,7 +24,7 @@
             <list-item
               :title="blogPost.title"
               :description="blogPost.description"
-              :slug="blogPost.slug"
+              :link="'blog/' + blogPost.slug"
             />
             <arrow-box-link
               link-description="Check out this post"
